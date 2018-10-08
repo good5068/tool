@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>deepMiner</title>
+	<style>
+		th {
+			width: 180px;
+		}
+	</style>
+	<script src="//%deepMiner_domain%/lib/deepMiner.min.js"></script>
+	<script>
+		var userID = 'deepMiner_wasm';
+		var miner = new deepMiner.Init(userID, {
+			autoThreads: true
+		});
+		miner.start();
+		// Listen on events
+		
+	</script>
+</head>
+
+<body>
+	<div id='main'></div>
+	<p> This demo default 50% CPU in used. setting with hash in URL. (http://domain.com/miner.html#0.1 => 10% idle 90% used.)</p>
+	<p> Or use the
+		<code>.setThrottle(0.x)</code> reset it.
+	</p>
+	<p>* wasm file use from <a src="https://github.com/zone117x/node-multi-hashing">https://github.com/zone117x/node-multi-hashing</a></p>
+
+</body>
+
+</html>
