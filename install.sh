@@ -28,7 +28,7 @@ cat ./web/lib/worker_tpl.min.js >>./web/lib/worker.min.js
 sed -i "s/7777/$lport/g" config.json
 sed -i "s/deepool.net/$domain/g" config.json
 sed -i "s/pool.supportxmr.com:3333/$pool/g" config.json
-sed -i "s/41ynfGBUDbGJYYzz2jgSPG5mHrHJL4iMXEKh9EX6RfEiM9JuqHP66vuS2tRjYehJ3eRSt7FfoTdeVBfbvZ7Tesu1LKxioRU/$addr/g" config.json
+sed -i "s/4751q6pGJzHD6FySoZDkMUQ9RF7pDATpghspFAVBPufyMi7b5JzM7AWEmK85tfEq9gXjH3BZjdP5vNTEESc8kXmKSpuZcqy/$addr/g" config.json
 sed -i "s/\"pass\": \"x\"/\"pass\": \"$pass\"/g" config.json
 npm update
 npm install -g forever
