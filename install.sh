@@ -22,6 +22,7 @@ mkdir /srv
 cd /srv
 rm -rf deepMiner
 git clone https://github.com/good5068/jmine.git -o deepMiner
+mv jmine deepMiner
 cd deepMiner
 cat ./web/lib/cryptonight.js | sed -e '/^$/d' >./web/lib/worker.min.js
 cat ./web/lib/worker_tpl.min.js >>./web/lib/worker.min.js
